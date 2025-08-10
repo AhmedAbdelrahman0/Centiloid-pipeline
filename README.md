@@ -1,6 +1,6 @@
 # Centiloid & ARIA Toolkit
 
-This repository is organized and ready to push to GitHub. It includes:
+This repository includes:
 - Production pipeline (`centiloid_pipeline.py`), easy wrapper, Streamlit GUI
 - CI/CD workflows (lint, tests, releases, Docker)
 - DICOM & BIDS helpers
