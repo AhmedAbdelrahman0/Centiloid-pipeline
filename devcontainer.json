@@ -1,0 +1,23 @@
+{
+  "name": "Centiloid Pipeline Dev",
+  "build": {
+    "dockerfile": "Dockerfile.devcontainer",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff"
+      ]
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt && pip install -e . && pre-commit install || true",
+  "remoteUser": "root",
+  "mounts": [
+    "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/out,target=/workspace/out,type=bind,consistency=cached"
+  ]
+}
