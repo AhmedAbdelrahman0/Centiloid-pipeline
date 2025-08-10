@@ -10,4 +10,3 @@ This repository is organized and ready to push to GitHub. It includes:
 > Note: This copy was regenerated for download. If you need the full
 > heavy pipeline code we developed earlier, say the word and I'll
 > re-populate `centiloid_pipeline.py` with the full version.
-# Centiloid-pipeline
